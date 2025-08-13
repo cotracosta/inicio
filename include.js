@@ -9,10 +9,10 @@ function includeHTML() {
     if (file) {
       /* Make an HTTP request using the attribute value as the file name: */
       xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
+      xhttp.onreadystatechange = function () {
         if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+          if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
           /* Remove the attribute, and call this function once more: */
           elmnt.removeAttribute("include-html");
           includeHTML();
@@ -25,3 +25,24 @@ function includeHTML() {
     }
   }
 }
+setTimeout(() => {
+  const url = new URL(window.location.href);
+  ruta = url.pathname.split("/")[2];
+  console.log(ruta);  
+  inicio = document.querySelector("#inicio");
+  rutas = document.getElementById("rutas");
+  tarifas = document.getElementById("tarifas");
+  pasajeros = document.getElementById("pasajeros");
+  empleados = document.getElementById("empleados");
+  about = document.getElementById("about");
+  pqrs = document.getElementById("pqrs");
+  contact = document.getElementById("contact");
+  if (ruta == "index.html") inicio.classList += " active";
+  if (ruta == "rutas-horarios.html") rutas.classList += " active";
+  if (ruta == "tarifas.html") tarifas.classList += " active";
+  if (ruta == "pasajeros.html") pasajeros.classList += " active";
+  if (ruta == "empleados.html") empleados.classList += " active";
+  if (ruta == "about.html") about.classList += " active";
+  if (ruta == "pqrs.html") pqrs.classList += " active";
+  if (ruta == "contact.html") contact.classList += " active";
+}, 1000);
