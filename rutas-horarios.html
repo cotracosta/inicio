@@ -1,0 +1,402 @@
+<script src="include.js"></script>
+<div include-html="include1.html"></div>
+<!-- Header Start -->
+<div class="container-fluid page-header">
+    <div class="container">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+            <h3 class="display-4 text-white text-uppercase">Rutas - Horarios</h3>
+            <div class="d-inline-flex text-white">
+                <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Home</a></p>
+                <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                <p class="m-0 text-uppercase">Rutas - Horarios</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+<!-- tabla de rutas y horarios start -->
+<style>
+    #ruta-horarios {
+        width: 1213px;
+    }
+
+    thead tr {
+        border-color: #70b0e0;
+        background-color: #70b0e0;
+    }
+
+    thead th {
+        text-align: center;
+        width: 33px;
+    }
+
+    thead th span {
+        font-size: 11pt;
+        font-family: 'arial black', sans-serif;
+    }
+</style>
+<div class="container">
+    <table id="ruta-horarios">
+        <thead>
+            <tr>
+                <th><span style="font-size: 13pt;"><strong><span>Origen - Destino</span></strong></span></th>
+                <th style="width: 20px;"><span><strong><span>Hora salida</span></strong></span></th>
+                <th>&nbsp;</th>
+                <th><span style="font-size: 13pt;"><strong><span>Origen - Destino</span></strong></span></th>
+                <th style="width: 20px;"><span><strong><span>Hora salida</span></strong></span></th>
+                <th>&nbsp;</th>
+                <th><span style="font-size: 13pt;"><strong><span>Origen - Destino</span></strong></span></th>
+                <th style="width: 20px;"><span><strong><span>Hora salida</span></strong></span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="width: 33px; border-color: #59c9a6;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">Valledupar – Barranquilla</span></td>
+                <td style="width: 20px; border-color: #59c9a6; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">03:15 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">Barranquilla - Valledupar</span></td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">03:15 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px;">&nbsp;<span style="font-family: 'arial black', sans-serif; font-size: 11pt;">Valledupar - Santa Marta</span></td>
+                <td style="width: 25px; text-align: center;">&nbsp;<span style="font-family: 'arial black', sans-serif; font-size: 11pt;">04:30 A.M.</span></td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px; background-color: #59c9a6;">&nbsp;</td>
+                <td style="width: 20px; background-color: #59c9a6; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">03:30 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px; background-color: #dde384;">&nbsp;</td>
+                <td style="width: 20px; background-color: #dde384; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">03:30 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px; background-color: #e6b5b1; text-align: center;">&nbsp;<span style="font-family: 'arial black', sans-serif; font-size: 11pt;">05:30 A.M.</span></td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">04:15 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">04:15 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px;">&nbsp;</td>
+                <td style="width: 25px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">06:30 A.M.</span></td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px; background-color: #59c9a6;">&nbsp;</td>
+                <td style="width: 20px; background-color: #59c9a6; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">04:30 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px; background-color: #dde384;">&nbsp;</td>
+                <td style="width: 20px; background-color: #dde384; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">04:30 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px; background-color: #e6b5b1; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">07:30 A.M.</span></td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">05:15 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">05:15 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px;">&nbsp;</td>
+                <td style="width: 25px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">04:30 P.M.</span></td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px; background-color: #59c9a6;">&nbsp;</td>
+                <td style="width: 20px; background-color: #59c9a6; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">05:30 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px; background-color: #dde384;">&nbsp;</td>
+                <td style="width: 20px; background-color: #dde384; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">05:30 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">06:15 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">06:15 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px;">&nbsp;<span style="font-family: 'arial black', sans-serif; font-size: 11pt;">Santa Marta - Valledupar</span></td>
+                <td style="width: 25px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">04:30 A.M.</span></td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px; background-color: #59c9a6;">&nbsp;</td>
+                <td style="width: 20px; background-color: #59c9a6; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">06:30 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px; background-color: #dde384;">&nbsp;</td>
+                <td style="width: 20px; background-color: #dde384; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">06:30 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px; background-color: #e6b5b1; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">05:30 A.M.</span></td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">07:15 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">07:15 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px;">&nbsp;</td>
+                <td style="width: 25px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">06:30 A.M.&nbsp;</span></td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px; background-color: #59c9a6;">&nbsp;</td>
+                <td style="width: 20px; background-color: #59c9a6; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">07:30 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px; background-color: #dde384;">&nbsp;</td>
+                <td style="width: 20px; background-color: #dde384; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">07:30 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px; background-color: #e6b5b1; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">07:30 A.M.</span></td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">08:15 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">08:15 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px;">&nbsp;</td>
+                <td style="width: 25px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">03:30 P.M.</span></td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px; background-color: #59c9a6;">&nbsp;</td>
+                <td style="width: 20px; background-color: #59c9a6; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">08:30 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px; background-color: #dde384;">&nbsp;</td>
+                <td style="width: 20px; background-color: #dde384; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">08:30 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px; background-color: #e6b5b1; text-align: center;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">09:15 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">09:15 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">&nbsp;</span></td>
+                <td style="width: 25px; text-align: center;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px; background-color: #59c9a6;">&nbsp;</td>
+                <td style="width: 20px; background-color: #59c9a6; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">09:30 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px; background-color: #dde384;">&nbsp;</td>
+                <td style="width: 20px; background-color: #dde384; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">09:30 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px; background-color: #e6b5b1; text-align: center;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">10:15 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">10:15 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px;">&nbsp;<span style="font-family: 'arial black', sans-serif; font-size: 11pt;">Valledupar - El Banco</span></td>
+                <td style="width: 25px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">09:30 A.M.</span></td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px; background-color: #59c9a6;">&nbsp;</td>
+                <td style="width: 20px; background-color: #59c9a6; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">10:30 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px; background-color: #dde384;">&nbsp;</td>
+                <td style="width: 20px; background-color: #dde384; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">10:30 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px; background-color: #e6b5b1; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">01:30 P.M.</span></td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">11:15 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">11:15 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px;">&nbsp;</td>
+                <td style="width: 25px; text-align: center;">&nbsp;&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px; background-color: #59c9a6;">&nbsp;</td>
+                <td style="width: 20px; background-color: #59c9a6; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">11:30 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px; background-color: #dde384;">&nbsp;</td>
+                <td style="width: 20px; background-color: #dde384; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">11:30 A.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px; background-color: #e6b5b1; text-align: center;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">12:15 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">12:15 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px;">&nbsp;<span style="font-family: 'arial black', sans-serif; font-size: 11pt;">El Banco -&nbsp;Valledupar</span></td>
+                <td style="width: 25px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">09:30 A.M.</span></td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px; background-color: #59c9a6;">&nbsp;</td>
+                <td style="width: 20px; background-color: #59c9a6; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">12:30 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px; background-color: #dde384;">&nbsp;</td>
+                <td style="width: 20px; background-color: #dde384; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">12:30 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px; background-color: #e6b5b1; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">01:30 P.M.</span></td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">01:15 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">01:15 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px; background-color: #59c9a6;">&nbsp;</td>
+                <td style="width: 20px; background-color: #59c9a6; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">01:30 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px; background-color: #dde384;">&nbsp;</td>
+                <td style="width: 20px; background-color: #dde384; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">01:30 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">02:15 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">02:15 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px; background-color: #59c9a6;">&nbsp;</td>
+                <td style="width: 20px; background-color: #59c9a6; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">02:30 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px; background-color: #dde384;">&nbsp;</td>
+                <td style="width: 20px; background-color: #dde384; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">02:30 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">03:15 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">03:15 P.M.&nbsp;</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px; background-color: #59c9a6;">&nbsp;</td>
+                <td style="width: 20px; background-color: #59c9a6; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">03:30 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">03:30 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">04:15 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px; background-color: #dde384;">&nbsp;</td>
+                <td style="width: 20px; background-color: #dde384; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">04:15 P.M.&nbsp;</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px; background-color: #59c9a6;">&nbsp;</td>
+                <td style="width: 20px; background-color: #59c9a6; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">04:30 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">04:30 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px;">&nbsp;</td>
+                <td style="width: 20px; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">05:15 P.M.&nbsp;</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px; background-color: #dde384;">&nbsp;</td>
+                <td style="width: 20px; background-color: #dde384;">&nbsp;</td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px; background-color: #59c9a6;">&nbsp;</td>
+                <td style="width: 20px; background-color: #59c9a6; text-align: center;"><span style="font-family: 'arial black', sans-serif; font-size: 11pt;">05:30 P.M.</span></td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px;">&nbsp;</td>
+                <td style="width: 20px;">&nbsp;</td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px; background-color: #e6b5b1;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 33px;">&nbsp;</td>
+                <td style="width: 20px;">&nbsp;</td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 82px;">&nbsp;</td>
+                <td style="width: 20px;">&nbsp;</td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 71px;">&nbsp;</td>
+                <td style="width: 25px;">&nbsp;&nbsp;</td>
+                <td style="width: 25px;">&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- tabla de rutas y horarios end -->
+
+
+<div include-html="include2.html"></div>
+<script>includeHTML();</script>

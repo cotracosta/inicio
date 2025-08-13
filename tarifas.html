@@ -1,0 +1,186 @@
+<script src="include.js"></script>
+<div include-html="include1.html"></div>
+<!-- <?php include_once("bd/consulta.php"); ?> -->
+<!-- Header Start -->
+<div class="container-fluid page-header">
+    <div class="container">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+            <h3 class="display-4 text-white text-uppercase">Tarifas</h3>
+            <div class="d-inline-flex text-white">
+                <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Home</a></p>
+                <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                <p class="m-0 text-uppercase">Tarifas</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+<!-- Booking Start -->
+<div class="container booking mt-5 pb-5 ">
+    <div class="container pb-5">
+        <div class="bg-light shadow" style="padding: 30px; width: 610px;">
+            <div class="row align-items-center" style="min-height: 60px;">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3 mb-md-0">
+                                <select class="custom-select px-4" style="height: 47px;">
+                                    <option selected disabled>Origen</option>
+                                    <?php foreach ($origenes as $origen) {  ?>
+                                        <option value=""><?php echo explode(" A ", $origen['nombreRuta'])[1]; ?></option>
+                                    <?php } ?>
+                                </select>
+
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                                <div class="date" id="date1" data-target-input="nearest">
+                                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Depart Date" data-target="#date1" data-toggle="datetimepicker" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                                <div class="date" id="date2" data-target-input="nearest">
+                                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Return Date" data-target="#date2" data-toggle="datetimepicker" />
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="col-md-6">
+                            <div class="mb-6 mb-md-0">
+                                <select class="custom-select px-4" style="height: 47px;">
+                                    <option selected disabled>Destino</option>
+                                    <?php foreach ($destinos as $destino) {  ?>
+                                        <option value=""><?php echo $destino['destino']; ?></option>
+                                    <?php } ?>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Booking End -->
+
+<!-- pinbus copetran -->
+<!-- <div id="text-2020257455" class="text">
+    <p><script async="" src="//buscador.pinbus.com/js/widget.js"></script></p>
+    <div id="pinbus-search-form" data-pb="Y29wZXRyYW5AcGluYnVzLmNvbQ==" data-key="d2xfY29wZXRyYW5fMTIz">
+        <div id="pinbus-widget-search desktop">
+            <div id="pb_sf_search_module">
+                <h2>Compra tu <strong>Pasaje de Bus</strong></h2>
+                <form id="pb_sf_search_form" autocomplete="off">
+                    <input type="hidden" id="pb_sf_pasajeros" value="1">
+                    <div class="row">
+                        <div class="small-12 medium-10 columns">
+                            <div class="row">
+                                <div id="div_container_ida" class="small-12 medium-3 columns">
+                                    <label for="origin" class="control-label">Origen</label>
+                                    <input id="pb_sf_origin" name="origin" type="text" class="searchInput required ui-autocomplete-input" placeholder="Seleccione Origen" tabindex="1" autocomplete="off">
+                                </div>
+                                <div id="div_container_destino" class="small-12 medium-3 columns">
+                                    <label for="destino" class="control-label">Destino</label>
+                                    <input id="pb_sf_destiny" name="destiny" type="text" class="searchInput required ui-autocomplete-input" placeholder="Seleccione Destino" tabindex="2" autocomplete="off">
+                                </div>
+                                <div id="div_container_salida" class="small-6 medium-3 columns">
+                                    <label for="pb_sf_departure_submit" class="control-label">Fecha de Salida</label>
+                                    <input type="hidden" id="pb_sf_departure_submit" value="" readonly="readonly">
+                                    <input id="pb_sf_departure" placeholder="Fecha Salida" name="pb_sf_departure" class="required hasDatepicker" type="text" tabindex="3" readonly="readonly" autocomplete="off">
+                                </div>
+                                <div id="div_container_retorno" class="small-6 medium-3 columns">
+                                    <label for="origin" class="control-label">Fecha de Regreso</label>
+                                    <input type="hidden" id="pb_sf_return_submit" value="" readonly="readonly">
+                                    <input id="pb_sf_return" placeholder="Regreso (opc.)" name="pb_sf_return" type="text" tabindex="4" readonly="readonly" autocomplete="off" class="hasDatepicker">
+                                </div>
+                            </div>
+                        </div>
+                        <label for="" class="control-label">&nbsp;</label>
+                        <div id="button_container" class="small-12 medium-2 columns"><button id="pb_sf_button_submit" class="btn_search radius expand tiny right gtm-buscar" type="submit" tabindex="5" disabled="">Buscar</button></div>
+                    </div>
+                </form>
+            </div>
+            <div id="pinbus-desarrollado_pinbus"></div>
+        </div>
+    </div>
+    <style>
+        #text-2020257455 {
+            text-align: center;
+        }
+    </style>
+</div> -->
+<!-- pinbus copetran -->
+
+<!-- Tarifas start -->
+<div class="container py-5">
+    <!-- <select class="form-select" name="tarifaSelect" id="tarifaSelect">
+        <option value="" disabled selected>Buscar Ruta</option>
+        <option value="1">VALLEDUPAR A BARRANQUILLA</option>
+        <option value="2">BARRANQUILLA A VALLEDUPAR</option>
+        <option value="3">VALLEDUPAR A TAMALAMEQUE</option>
+        <option value="4">TAMALAMEQUE A VALLEDUPAR</option>
+        <option value="5">VALLEDUPAR A SANTA MARTA</option>
+        <option value="6">SANTA MARTA A MAICAO Y VALLEDUPAR</option>
+        <option value="7">VALLEDUPAR A MAICAO Y RIO HACHA</option>
+        <option value="8">RIO HACHA Y MAICAO A VALLEDUPAR Y SANTA MARTA</option>
+        <option value="9">VALLEDUPAR A EL BANCO MAGDALENA</option>
+        <option value="10">VALLEDUPAR A EL BANCO MAGDALENA</option>
+        <option value="11">VALLEDUPAR A PLATO MAGDALENA</option>
+        <option value="12">PLATO A VALLEDUPAR</option>
+    </select> -->
+    <div class="row row-cols-3">
+        <?php foreach ($rutas as $ruta) {  ?>
+            <div class="col">
+                <table class="table table-sm table-bordered display" id="tablaTarifas">
+                    <thead class="table-dark">
+                        <tr class="table-info text-dark" style="text-align: center">
+                            <th colspan="3"><?php echo $ruta['nombreRuta']; ?></th>
+                        </tr>
+                        <tr>
+                            <th>Destino</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($tarifas as $tarifa) { ?>
+                            <?php if ($tarifa['rutaAsignada'] == $ruta['idRuta']) { ?>
+                                <tr>
+                                    <td><?php echo $tarifa['destino']; ?></td>
+                                    <td><?php echo $tarifa['precio']; ?></td>
+                                </tr>
+                            <?php } ?>
+                        <?php } ?>
+                    </tbody>
+                </table>
+            </div>
+        <?php }  ?>
+    </div>
+</div>
+<!-- datatables -->
+<!-- Tarifas end -->
+<div include-html="include2.html"></div>
+<script>includeHTML();</script>
+<!-- <script>
+    $(document).ready(function() {
+        $('#tablaTarifas').DataTable();
+    });
+</script> -->
+<!-- <script src="js/tablaTarifas.js"></script> -->
+<!-- INSERT INTO `rutas`(`nombreRuta`, `avRuta`) VALUES ('VALLEDUPAR A BARRANQUILLA','VB'); -->
+<!-- INSERT INTO `rutas`(`nombreRuta`, `avRuta`) VALUES ('BARRANQUILLA A VALLEDUPAR','BV'); -->
+<!-- INSERT INTO `rutas`(`nombreRuta`, `avRuta`) VALUES ('VALLEDUPAR A TAMALAMEQUE','VT'); -->
+<!-- INSERT INTO `rutas`(`nombreRuta`, `avRuta`) VALUES ('TAMALAMEQUE A VALLEDUPAR','TV'); -->
+<!-- INSERT INTO `rutas`(`nombreRuta`, `avRuta`) VALUES ('VALLEDUPAR A SANTA MARTA','VSM'); -->
+<!-- INSERT INTO `rutas`(`nombreRuta`, `avRuta`) VALUES ('SANTA MARTA A MAICAO Y VALLEDUPAR','SMV'); -->
+<!-- INSERT INTO `rutas`(`nombreRuta`, `avRuta`) VALUES ('VALLEDUPAR A MAICAO Y RIO HACHA','VMRH'); -->
+<!-- INSERT INTO `rutas`(`nombreRuta`, `avRuta`) VALUES ('RIO HACHA Y MAICAO A VALLEDUPAR Y SANTA MARTA','RHMVSM'); -->
+<!-- INSERT INTO `rutas`(`nombreRuta`, `avRuta`) VALUES ('VALLEDUPAR A EL BANCO MAGDALENA','VEB'); -->
+<!-- INSERT INTO `rutas`(`nombreRuta`, `avRuta`) VALUES ('VALLEDUPAR A EL BANCO MAGDALENA','EBV'); -->
+<!-- INSERT INTO `rutas`(`nombreRuta`, `avRuta`) VALUES ('VALLEDUPAR A PLATO MAGDALENA','VP'); -->
+<!-- INSERT INTO `rutas`(`nombreRuta`, `avRuta`) VALUES ('PLATO A VALLEDUPAR','PV'); -->

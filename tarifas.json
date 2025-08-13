@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "destino": "MARIA ANGOLA",
+        "precio": 10000
+    },
+    {
+        "id": 2,
+        "destino": "BOSCONIA",
+        "precio": 15000
+    },
+    {
+        "id": 3,
+        "destino": "EL COPEY",
+        "precio": 25000
+    },
+    {
+        "id": 4,
+        "destino": "LA LOMA DEL BALSAMO",
+        "precio": 27000
+    },
+    {
+        "id": 5,
+        "destino": "FUNDACION",
+        "precio": 35000
+    },
+    {
+        "id": 6,
+        "destino": "ARACATACA",
+        "precio": 35000
+    },
+    {
+        "id": 7,
+        "destino": "CIENAGA",
+        "precio": 40000
+    },
+    {
+        "id": 8,
+        "destino": "BARRANQUILLA",
+        "precio": 50000
+    }
+]
