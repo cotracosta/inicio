@@ -25,10 +25,29 @@ function includeHTML() {
     }
   }
 }
+
+function includeHEAD() {
+  const icon = document.createElement('link');
+  const meta = document.createElement('meta');
+  const styles = document.createElement('link');
+  
+  meta.setAttribute('charset', 'utf-8');
+  icon.href = "img/favicon.ico";
+  icon.rel = 'icon';
+  styles.href = "css/style.css";
+  styles.rel = 'stylesheet';
+  
+  
+  document.head.appendChild(icon);
+  document.head.appendChild(styles);
+  document.head.appendChild(meta);
+
+}
+
 setTimeout(() => {
   const url = new URL(window.location.href);
   ruta = url.pathname.split("/")[2];
-  console.log(ruta);  
+  console.log(ruta);
   inicio = document.querySelector("#inicio");
   rutas = document.getElementById("rutas");
   tarifas = document.getElementById("tarifas");
@@ -46,3 +65,5 @@ setTimeout(() => {
   if (ruta == "pqrs.html") pqrs.classList += " active";
   if (ruta == "contact.html") contact.classList += " active";
 }, 1000);
+
+includeHEAD();
