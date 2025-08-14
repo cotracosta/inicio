@@ -29,12 +29,17 @@ function includeHTML() {
 function includeHEAD() {
   const icon = document.createElement('link');
   const meta = document.createElement('meta');
+  const meta2 = document.createElement('meta');
   const styles = document.createElement('link');
   const carousel = document.createElement('link');
   const tempusdominus = document.createElement('link');
   const fontAwesome = document.createElement('link');
 
   meta.setAttribute('charset', 'utf-8');
+  meta2.setAttribute('content', 'width=device-width, initial-scale=1.0');
+  meta2.setAttribute('name', 'viewport');
+  meta2.content="width=device-width, initial-scale=1.0";
+  meta2.name="viewport";
   icon.href = "img/favicon.ico";
   icon.rel = 'icon';
   styles.href = "css/style.css";
@@ -43,18 +48,46 @@ function includeHEAD() {
   carousel.rel = "stylesheet";
   tempusdominus.href = "lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css";
   tempusdominus.rel = "stylesheet";
-  fontAwesome.href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css";
-  fontAwesome.rel="stylesheet";
+  fontAwesome.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css";
+  fontAwesome.rel = "stylesheet";
 
+  document.head.appendChild(meta);
+  document.head.appendChild(meta2);
   document.head.appendChild(icon);
-  document.head.appendChild(styles);
+  document.head.appendChild(fontAwesome);
   document.head.appendChild(carousel);
   document.head.appendChild(tempusdominus);
-  document.head.appendChild(fontAwesome);
-  document.head.appendChild(meta);
+  document.head.appendChild(styles);
 
 }
+function includeFOOTER() {
+  const jsMain = document.createElement('script');
+  const jquery = document.createElement('script');
+  const bootstrap = document.createElement('script');
+  const easing = document.createElement('script');
+  const owlcarousel = document.createElement('script');
+  const moment = document.createElement('script');
+  const momentTimezone = document.createElement('script');
+  const tempusdominus = document.createElement('script');
 
+  jquery.src = "https://code.jquery.com/jquery-3.7.0.min.js";
+  bootstrap.src = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js";
+  easing.src = "lib/easing/easing.min.js";
+  owlcarousel.src = "lib/owlcarousel/owl.carousel.min.js";
+  moment.src = "lib/tempusdominus/js/moment.min.js";
+  momentTimezone.src = "lib/tempusdominus/js/moment-timezone.min.js";
+  tempusdominus.src = "lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js";
+  jsMain.src="js/main.js";
+  document.body.appendChild(jsMain);
+  document.body.appendChild(jquery);
+  document.body.appendChild(bootstrap);
+  document.body.appendChild(easing);
+  document.body.appendChild(owlcarousel);
+  document.body.appendChild(moment);
+  document.body.appendChild(momentTimezone);
+  document.body.appendChild(tempusdominus);
+
+}
 setTimeout(() => {
   const url = new URL(window.location.href);
   ruta = url.pathname.split("/")[2];
@@ -78,3 +111,4 @@ setTimeout(() => {
 }, 1000);
 
 includeHEAD();
+// includeFOOTER();
