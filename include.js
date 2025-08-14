@@ -30,16 +30,27 @@ function includeHEAD() {
   const icon = document.createElement('link');
   const meta = document.createElement('meta');
   const styles = document.createElement('link');
-  
+  const carousel = document.createElement('link');
+  const tempusdominus = document.createElement('link');
+  const fontAwesome = document.createElement('link');
+
   meta.setAttribute('charset', 'utf-8');
   icon.href = "img/favicon.ico";
   icon.rel = 'icon';
   styles.href = "css/style.css";
   styles.rel = 'stylesheet';
-  
-  
+  carousel.href = "lib/owlcarousel/assets/owl.carousel.min.css";
+  carousel.rel = "stylesheet";
+  tempusdominus.href = "lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css";
+  tempusdominus.rel = "stylesheet";
+  fontAwesome.href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css";
+  fontAwesome.rel="stylesheet";
+
   document.head.appendChild(icon);
   document.head.appendChild(styles);
+  document.head.appendChild(carousel);
+  document.head.appendChild(tempusdominus);
+  document.head.appendChild(fontAwesome);
   document.head.appendChild(meta);
 
 }
@@ -47,7 +58,7 @@ function includeHEAD() {
 setTimeout(() => {
   const url = new URL(window.location.href);
   ruta = url.pathname.split("/")[2];
-  console.log(ruta);
+  // console.log(ruta);
   inicio = document.querySelector("#inicio");
   rutas = document.getElementById("rutas");
   tarifas = document.getElementById("tarifas");
